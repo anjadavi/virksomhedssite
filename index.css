@@ -40,4 +40,93 @@
     cursor: pointer;
     z-index: 2; /* Knappen ligger ovenpå videoen */
   }
+
+  .flex-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1px;
+    flex-wrap: wrap;
+  }
+
+  .flex-item {
+    width: 20%;
+    text-align: center;
+  }
+
+  /* .flex-item img {
+    width: 100%;
+    height: auto;
+    padding: 0px 5px;
+  } */
+
+  .h1_sektion1 {
+    text-align: center;
+    padding: 6px;
+    color: #333;
+    font-family: montserrat;
+    font-size: 10px;
+    font-weight: 700;
+  }
+
+  .h2_ringe {
+    text-align: center;
+    width: 100%;
+    height: auto;
+    color: #333;
+    font-family: montserrat;
+    font-size: 10px;
+    font-weight: 600;
+    padding: 2px 5px;
+  }
+  .h2_diamanter {
+    text-align: center;
+    width: 0%;
+    height: auto;
+    color: #333;
+    font-family: montserrat;
+    font-size: 10px;
+    font-weight: 600;
+    padding: 8px 5px;
+  }
+  .h2_perler {
+    text-align: center;
+    width: 100%;
+    height: auto;
+    color: #333;
+    font-family: montserrat;
+    font-size: 10px;
+    font-weight: 600;
+    padding: 4px 5px;
+  }
+  .h2_gavekort {
+    text-align: center;
+    width: 100%;
+    height: auto;
+    color: #333;
+    font-family: montserrat;
+    font-size: 10px;
+    font-weight: 600;
+    padding: 0px 1px;
+  }
+
+  .img1 {
+    width: 100%;
+    height: auto;
+    padding: 10px 5px;
+  }
+  .img2 {
+    width: 100%;
+    height: auto;
+    padding: 0px 5px;
+  }
+  .img3 {
+    width: 100%;
+    height: auto;
+    padding: 5px 5px;
+  }
+  .img4 {
+    width: 100%;
+    height: auto;
+    padding: 2px 1px;
+  }
 }
