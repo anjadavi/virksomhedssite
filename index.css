@@ -3,10 +3,13 @@
     font-family: "Montserrat", sans-serif;
   }
 
+  /* HEADER - sektion */
+
+  /* HERO - sektion */
   .hero {
     width: 100%;
     max-width: 800px;
-    margin: 0 auto; /* Centrer sektionen */
+    margin: 0 auto;
   }
 
   .hero-container {
@@ -22,7 +25,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 1; /* Videoen ligger i bunden */
+    z-index: 1;
   }
 
   .hero-button {
@@ -30,7 +33,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent baggrund */
+    background-color: rgba(255, 255, 255, 0.7);
     border: none;
     padding: 5px 10px;
     font-family: montserrat;
@@ -41,25 +44,21 @@
     z-index: 2; /* Knappen ligger ovenpå videoen */
   }
 
-  .flex-container {
+  /* OPDAG EFTER KATEGORI - sektion */
+
+  .kategori-sektion {
     display: flex;
     justify-content: space-between;
     gap: 1px;
     flex-wrap: wrap;
   }
 
-  .flex-item {
+  .flex-sektion {
     width: 20%;
     text-align: center;
   }
 
-  /* .flex-item img {
-    width: 100%;
-    height: auto;
-    padding: 0px 5px;
-  } */
-
-  .h1_sektion1 {
+  .h1_kategori {
     text-align: center;
     padding: 6px;
     color: #333;
@@ -77,6 +76,7 @@
     font-size: 10px;
     font-weight: 600;
     padding: 2px 5px;
+    cursor: pointer;
   }
   .h2_diamanter {
     text-align: center;
@@ -87,6 +87,7 @@
     font-size: 10px;
     font-weight: 600;
     padding: 8px 5px;
+    cursor: pointer;
   }
   .h2_perler {
     text-align: center;
@@ -97,6 +98,7 @@
     font-size: 10px;
     font-weight: 600;
     padding: 4px 5px;
+    cursor: pointer;
   }
   .h2_gavekort {
     text-align: center;
@@ -107,26 +109,152 @@
     font-size: 10px;
     font-weight: 600;
     padding: 0px 1px;
+    cursor: pointer;
   }
 
-  .img1 {
+  .img_ringe {
     width: 100%;
     height: auto;
     padding: 10px 5px;
+    cursor: pointer;
   }
-  .img2 {
+  .img_diamanter {
     width: 100%;
     height: auto;
     padding: 0px 5px;
+    cursor: pointer;
   }
-  .img3 {
+  .img_perler {
     width: 100%;
     height: auto;
     padding: 5px 5px;
+    cursor: pointer;
   }
-  .img4 {
+  .img_gavekort {
     width: 100%;
     height: auto;
     padding: 2px 1px;
+    cursor: pointer;
+  }
+
+  /* OMSMELTNING sektion */
+
+  .omsmeltning-sektion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0px;
+    margin: auto;
+  }
+
+  .omsmeltning-sektion img {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+
+  .omsmeltning-tekst-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    z-index: 2;
+    padding: 0px 20px;
+    width: 100%;
+  }
+
+  .omsmeltning-tekst-overlay h2 {
+    font-size: 8px;
+    font-weight: 700;
+    margin: 180px 0 5px;
+    color: #fff;
+  }
+
+  .omsmeltning-tekst-overlay h1 {
+    font-size: 17px;
+    font-weight: 700;
+    margin: 5px 0 5px;
+  }
+
+  .omsmeltning-tekst-overlay p {
+    font-size: 8px;
+    font-weight: 300;
+    margin: 0px 70px 5px;
+  }
+
+  .omsmeltning-button {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 3px 5px;
+    font-family: montserrat;
+    font-size: 8px;
+    font-weight: 500;
+    color: #333;
+    cursor: pointer;
+    z-index: 2; /* Knappen ligger ovenpå videoen */
+    text-decoration: none;
+  }
+
+  /* REPERATIONER - sektion */
+
+  .reperationer-sektion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0px;
+    margin-top: 5px;
+  }
+
+  .reperationer-sektion img {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+
+  .reperationer-tekst-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    z-index: 2;
+    padding: 0px 20px;
+    width: 100%;
+  }
+
+  .reperationer-tekst-overlay h1 {
+    font-size: 17px;
+    font-weight: 700;
+    margin: 710px 0 5px;
+  }
+
+  .reperationer-tekst-overlay p {
+    font-size: 8px;
+    font-weight: 300;
+    margin: 0px 70px 5px;
+  }
+
+  .reperationer-button {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 3px 5px;
+    font-family: montserrat;
+    font-size: 8px;
+    font-weight: 500;
+    color: #333;
+    cursor: pointer;
+    z-index: 2; /* Knappen ligger ovenpå videoen */
+    text-decoration: none;
   }
 }
