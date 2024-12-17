@@ -180,9 +180,15 @@ body {
 
 /* Trustpilot sektion (mobil) */
 
+.trustpilot {
+  margin-bottom: 5px;
+  background-color: #f7f7f7;
+}
 .trustpilot img {
-  width: 100%;
+  width: 80%;
   height: 100%;
+  display: block; /* Sørg for, at billedet bliver en blok */
+  margin: 0 auto; /* Centrerer billedet horisontalt */
 }
 
 /* GAVEIDEER sektion - (mobil + desktop) */
@@ -530,13 +536,15 @@ footer p {
   }
 
   /* TRUSTPILOT sektion - (desktop) */
+  .trustpilot {
+    background-color: #f7f7f7;
+  }
+
   .trustpilot img {
     width: 75%;
     height: 100%;
     display: block;
     margin: 0 auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
   }
 
   /* SHOP THE LOOK sektion - (desktop) */
