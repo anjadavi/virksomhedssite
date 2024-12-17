@@ -1,3 +1,5 @@
+/* -------------------------STANDARD MOBIL VERSION----------------------- */
+
 body {
   font-family: "Montserrat", serif;
   --color1: #ffffff;
@@ -8,8 +10,7 @@ body {
   margin: 0;
   padding: 0;
 }
-
-/* HERO - sektion */
+/* HERO sektion - (mobil) */
 
 .hero {
   width: 100%;
@@ -177,12 +178,220 @@ body {
   text-decoration: none;
 }
 
-/* Trustpilot sektion (mobil & desktop) */
+/* Trustpilot sektion (mobil) */
 
 .trustpilot img {
   width: 100%;
   height: 100%;
 }
+
+/* GAVEIDEER sektion - (mobil + desktop) */
+.gaveideer-sektion {
+  display: block;
+}
+.desktop-only {
+  display: block;
+}
+@media (max-width: 816px) {
+  .desktop-only {
+    display: none !important;
+  }
+  .gaveideer-sektion {
+    display: none !important; /* Skjuler sektionen fuldstændig */
+    background-color: transparent !important; /* Overskriv baggrundsfarve */
+    visibility: hidden; /* Skjul visuelt, hvis display ikke er nok */
+    height: 0; /* Undgå pladsreservation */
+    margin: 0; /* Fjern marginer */
+    padding: 0; /* Fjern padding */
+  }
+}
+.gaveideer-sektion {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 40px 10px;
+  background-color: var(--color3);
+}
+.gaveideer-sektion h2 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  margin: 20px 0;
+  color: var(--color1);
+}
+.flex-gaveideer-container {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  padding: 25px 10px;
+}
+.gaveideer-box {
+  background-color: var(--color1);
+  text-align: center;
+  padding: 30px;
+  width: 250px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.gaveideer-box img {
+  max-width: 100%;
+  cursor: pointer;
+}
+.gaveideer-box p {
+  margin: 10px 0;
+  font-size: 10px;
+  color: var(--color4);
+}
+.se-mere-container {
+  text-align: right;
+  padding-right: 10px;
+  padding-top: 18px;
+}
+.se-mere {
+  display: flex;
+  justify-content: right;
+  color: var(--color1);
+  font-size: 14px;
+  font-weight: 400px;
+  cursor: pointer;
+}
+.se-mere-button {
+  background-color: #d4c8a5; /* Den beige baggrundsfarve */
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding-bottom: 2.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Let skyggeeffekt */
+}
+.se-mere-button-container {
+  color: var(--color1);
+  font-size: 20px; /* Størrelse på pilen */
+  font-weight: bold;
+  padding-bottom: 2.5px;
+  justify-content: end;
+}
+.arrow-button:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* SHOP THE LOOK sektion - (mobil) */
+.shop-the-look-sektion {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color1);
+}
+.venstre-sektion {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.venstre-sektion img {
+  max-height: 400px;
+  justify-content: center;
+}
+.shop-the-look-overlay-tekst {
+  position: absolute;
+  color: var(--color1);
+  font-size: 28px;
+  font-weight: bold;
+  bottom: 50%;
+  left: 100px;
+  text-align: center;
+}
+.right-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* mellemrum mellem produkter */
+  margin-top: 20px;
+}
+.product {
+  text-align: center;
+  background-color: var(--color1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.product img {
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+.product:hover {
+  transform: translateY(-5px);
+}
+
+/* FOOTER - (mobil) */
+footer {
+  background-color: #aa9f7d4f;
+  padding: 20px;
+  color: black;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h4 {
+  margin-bottom: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+input,
+button {
+  margin: 5px 0;
+  font-size: 12px;
+  background-color: transparent;
+  cursor: pointer;
+}
+footer p {
+  font-weight: lighter;
+  font-size: 10px;
+  cursor: pointer;
+}
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer-section input {
+  padding: 8px;
+  border: 1px solid #4a3b29;
+  width: 70%;
+}
+.footer-section button {
+  padding: 8px;
+  background-color: transparent;
+  border: 1px solid #4a3b29;
+  cursor: pointer;
+}
+/* Social og betalingsikoner */
+.footer-icons {
+  margin-top: 20px;
+  cursor: pointer;
+}
+.social-icons img,
+.payment-icons img {
+  width: 40px;
+  margin: 5px;
+  cursor: pointer;
+}
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.footer-container h4 {
+  font-size: 12px;
+}
+
+/* ------------------------------ DESKTOP VERSION----------------------- */
 
 @media (min-width: 816px) {
   body {
@@ -193,10 +402,21 @@ body {
     --color4: #4a3b29;
     --color5: #303f3c;
   }
-
   main {
     margin-top: 105px;
   }
+  /* .section-divider {
+    width: 200px;
+    height: 1px;
+    background-color: #4a3b29;
+    margin: 10px auto;
+  }
+  .section-divider-hvid {
+    width: 200px;
+    height: 1px;
+    background-color: #ffffff;
+    margin: 10px auto;
+  } */
 
   /* HERO sektion - (desktop) */
 
@@ -309,6 +529,7 @@ body {
     color: var(--color4);
   }
 
+  /* TRUSTPILOT sektion - (desktop) */
   .trustpilot img {
     width: 75%;
     height: 100%;
@@ -317,115 +538,104 @@ body {
     margin-top: 50px;
     margin-bottom: 50px;
   }
-}
 
-/* GAVEIDEER sektion - (desktop) */
-.gaveideer-sektion {
-  display: block;
-}
-
-.desktop-only {
-  display: block;
-}
-@media (max-width: 816px) {
-  .desktop-only {
-    display: none !important;
+  /* SHOP THE LOOK sektion - (desktop) */
+  .shop-the-look-sektion {
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 0;
+    padding-top: 5px;
+    padding-left: 5px;
   }
-}
-.gaveideer-sektion {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 30px;
-  padding: 40px 10px;
-  background-color: var(--color3);
-}
+  .venstre-sektion {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .venstre-sektion img {
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    margin: 0;
+    padding: 0;
+  }
+  .shop-the-look-overlay-tekst {
+    position: absolute;
+    font-size: 38px;
+    bottom: 50%;
+    left: 55px;
+  }
+  .right-section {
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+  }
+  .product img {
+    max-width: 150px;
+    height: auto;
+  }
 
-.gaveideer-sektion h2 {
-  text-align: center;
-  font-size: 36px;
-  font-weight: bold;
-  margin: 20px 0;
-  color: var(--color1);
-}
-.flex-gaveideer-container {
-  display: flex;
-  justify-content: center;
-  gap: 70px;
-  padding: 25px 10px;
-}
-.gaveideer-box {
-  background-color: var(--color1);
-  text-align: center;
-  padding: 30px;
-  width: 250px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
+  /* FOOTER sektion - (desktop) */
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
 
-.gaveideer-box img {
-  max-width: 100%;
-}
-.gaveideer-box p {
-  margin: 10px 0;
-  font-size: 10px;
-  color: var(--color4);
-}
-.se-mere-container {
-  text-align: right;
-  padding-right: 10px;
-  padding-top: 10px;
-}
+  .footer-section {
+    flex: 1;
+  }
 
-.se-mere {
-  display: flex;
-  justify-content: right;
-  color: var(--color1);
-  font-size: 14px;
-  font-weight: 400px;
-  cursor: pointer;
-}
-
-.se-mere-button {
-  background-color: #d4c8a5; /* Den beige baggrundsfarve */
-  border: none;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  padding-bottom: 2.5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  outline: none;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Let skyggeeffekt */
-}
-
-.se-mere-button-container {
-  color: var(--color1);
-  font-size: 20px; /* Størrelse på pilen */
-  font-weight: bold;
-  padding-bottom: 2.5px;
-  justify-content: end;
-}
-
-.arrow-button:hover {
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-}
-
-/* Standard styling */
-.gaveideer-sektion {
-  background-color: var(--color3); /* Original baggrundsfarve */
-  display: block;
-}
-
-/* Fjern baggrundsfarve og skjul på mobil */
-@media (max-width: 816px) {
-  .gaveideer-sektion {
-    display: none !important; /* Skjuler sektionen fuldstændig */
-    background-color: transparent !important; /* Overskriv baggrundsfarve */
-    visibility: hidden; /* Skjul visuelt, hvis display ikke er nok */
-    height: 0; /* Undgå pladsreservation */
-    margin: 0; /* Fjern marginer */
-    padding: 0; /* Fjern padding */
+  .footer-section input {
+    width: auto;
+  }
+  .footer-container p {
+    font-size: 14px;
+  }
+  .footer-container h4 {
+    font-size: 17px;
+  }
+  .shop-the-look-sektion {
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 0;
+    padding-top: 5px;
+    padding-left: 5px;
+  }
+  .venstre-sektion {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .venstre-sektion img {
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    margin: 0;
+    padding: 0;
+  }
+  .shop-the-look-overlay-tekst {
+    position: absolute;
+    font-size: 38px;
+    bottom: 50%;
+    left: 55px;
+  }
+  .right-section {
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+  }
+  .product img {
+    max-width: 150px;
+    height: auto;
   }
 }
