@@ -267,8 +267,6 @@ text-transform: uppercase;
   .redesign_smykke_container {
     display: block;
     max-width: 100%;
-    margin-left: -8px;
-    margin-right: -14px;
     margin-bottom: 2em;
   }
 
@@ -305,7 +303,7 @@ text-transform: uppercase;
     margin: auto;
   }
 
-  .omsmelt_tekst1 {
+  .omsmelt_tekst1, .omsmelt_tekst3 {
     text-align: left;
     margin-bottom: 2.5em;
   }
@@ -360,6 +358,67 @@ text-transform: uppercase;
   }
 
 
+  /* Footer -----------------------*/
+  footer {
+    background-color: #aa9f7d4f;
+    padding: 20px;
+    color: black;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+  }
+  
+  h4 {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+input, button {
+    margin: 5px 0;
+    font-size: 12px;
+    background-color: transparent;
+  }
+footer p{
+    font-weight: lighter;
+    font-size: 10px;
+
+}
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .footer-section input {
+    padding: 8px;
+    border: 1px solid #4A3B29;
+    width: 70%;
+  }
+  
+  .footer-section button {
+    padding: 8px;
+    background-color: transparent;
+    border: 1px solid #4A3B29;
+    cursor: pointer;
+  }
+  
+  /* Social og betalingsikoner */
+  .footer-icons {
+    margin-top: 20px;
+  }
+  
+  .social-icons img,
+  .payment-icons img {
+    width: 40px;
+    margin: 5px;
+  }
+  .footer-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+  }
+  .footer-container h4{
+    font-size: 12px;
+  }
+
 
 
   /* DESKTOP VERSION */
@@ -368,6 +427,10 @@ text-transform: uppercase;
 
 /* DESKTOP HEADER */
     
+    body {
+      margin: 0;
+    }
+
   main {
     margin: 0;
   }
@@ -396,6 +459,7 @@ text-transform: uppercase;
   .header_logo {
   width: 150px;
   margin-top: -40px;
+  padding-left: 8px;
   }
 
   .forside_link {
@@ -417,7 +481,7 @@ text-transform: uppercase;
 
   .redesign_hero_container {
     max-width: 100%;
-    height: 400px;
+    height: 450px;
     display: flex;
     justify-content: center;
     margin: auto;
@@ -443,6 +507,9 @@ text-transform: uppercase;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  border: 2px solid var(--color4);
+  margin: 12px;
+  margin-bottom: 2em;
 }
 
 .redesign_guide_container {
@@ -460,5 +527,76 @@ text-transform: uppercase;
   grid-column: 2/-1;
   grid-row: 2/3;
 }
+
+.redesign_smykke_container {
+  max-width: 80%;
+  height: 100%;
+  display: block;
+  margin: auto;
+  margin-bottom: 2em;
+  overflow: hidden;
+}
+
+.redesign_smykke_container img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.omsmelt_container {
+  border: none;
+  max-width: 100%;
+  margin: 12px;
+}
+
+.omsmelt_container .faq_streg {
+  display: none;
+}
+
+.omsmelt_tekst1 {
+  width: 80%;
+  border-top: 2px solid var(--color4);
+  border-bottom: 2px solid var(--color4);
+  margin: auto;
+  margin-bottom: 2em;
+  text-align: left;
+}
+
+.omsmelt_tekst2 {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 2em;
+  text-align: right;
+  border-bottom: 2px solid var(--color4);
+}
+
+.omsmelt_tekst3 {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 2em;
+  text-align: left;
+  border-bottom: 2px solid var(--color4);
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.footer-section {
+  flex: 1;
+}
+
+.footer-section input {
+  width: auto;
+}
+.footer-container p{
+  font-size: 14px;
+}
+.footer-container h4{
+  font-size: 17px;
+}
+
 
   }
