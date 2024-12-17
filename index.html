@@ -10,44 +10,66 @@
 
 <body>
 
-    <header>
-        <div>
-          <div class="header_info">
-            <div class="erfaring">
-              <p><strong>20+ års</strong></p>
-              <p>Erfaring</p>
-            </div>
-            <div class="fragt">
-              <p><strong>Gratis fragt</strong></p>
-              <p>Fri fragt over 499,-</p>
-            </div>
-            <div class="vrksted">
-              <p><strong>Værksted</strong></p>
-              <p>Hellerup</p>
-            </div>
-          </div>
-  
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="robots" content="noindex" />
+        <!-- FONT -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+        <!-- CSS STYLING -->
+        <link rel="stylesheet" href="egetdesign.css" />
+        <title>Eget design</title>
+      </head>
+      <body>
+        <header>
           <div>
-            <input type="checkbox" id="burger-toggle" />
-            <label for="burger-toggle" class="burger-menu">&#9776;</label>
-  
-            <nav>
-              <ul class="nav_bar">
-                <li><a href="index.html">Forside</a></li>
-                <li><a href="smykkesiden.html">Smykker</a></li>
-                <li><a href="Egetdesign.html">Eget design</a></li>
-                <li><a href="kærlighedsringe.html">Kærlighedsringe</a></li>
-                <li><a href="omos.html">Værkstedet</a></li>
-              </ul>
-            </nav>
-            <div class="logo_container">
-              <img class="header_logo" src="MP_online_logo.avif" alt="logo" />
+            <div class="header_info_mobil">
+              <div class="erfaring">
+                <p><strong>20+ års</strong></p>
+                <p>Erfaring</p>
+              </div>
+              <div class="fragt">
+                <p><strong>Gratis fragt</strong></p>
+                <p>Fri fragt over 499,-</p>
+              </div>
+              <div class="vrksted">
+                <p><strong>Værksted</strong></p>
+                <p>Hellerup</p>
+              </div>
+            </div>
+    
+            <div class="header_info_desktop">
+              <span>Brug for hjælp?</span>
+              <span>+20 års erfaring | Fri fragt over 499,-</span>
+              <span class="flag">🇩🇰 Dansk Virksomhed</span>
+            </div>
+    
+            <div>
+              <div class="mobil_header">
+                <input type="checkbox" id="burger-toggle" />
+                <label for="burger-toggle" class="burger-menu">&#9776;</label>
+              </div>
+    
+              <nav>
+                <ul class="nav_bar">
+                  <li class="forside_link"><a href="index.html">Forside</a></li>
+                  <li><a href="smykkesiden.html">Smykker</a></li>
+                  <li><a href="Egetdesign.html">Eget design</a></li>
+                  <li><a href="kærlighedsringe.html">Kærlighedsringe</a></li>
+                  <li><a href="omos.html">Værkstedet</a></li>
+                </ul>
+              </nav>
+              <div class="logo_container">
+                <a href="index.html"><img class="header_logo" src="MP_online_logo.avif" /></a>
+              </div>
             </div>
           </div>
-        </div>
-      </header>
+        </header>
 
-
+        
+<main>
 <section class="hero">
     <div class="hero-container">
         <iframe 
@@ -57,26 +79,25 @@
             allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" 
             allowfullscreen>
         </iframe>
-        <button class="hero-button">SMYKKER</button>
     </div>
 </section>
 
 
 <h1 class="h1_kategori">OPDAG EFTER KATEGORI</h1>
-<section class="kategori-sektion">
-    <div class="flex-sektion">
+<section class="flex-kategori-sektion">
+    <div class="kategori-sektion">
         <img src="/illustrator - V&F.png">
         <h2>VIELSES- OG FORLOVELSESRINGE</h2>
         </div>
-    <div class="flex-sektion">
+    <div class="kategori-sektion">
         <img src="/illustrator - diamant.png" alt="illustrator 2">
         <h2>DIAMANTER</h2>
         </div>
-    <div class="flex-sektion">
+    <div class="kategori-sektion">
         <img src="/illustrator - perler.png" alt="ilustrator 3">
         <h2>PERLER</h2>
         </div>
-    <div class="flex-sektion">
+    <div class="kategori-sektion">
         <img src="/illustrator - gavekort.png" alt="illustrator 4">
         <h2>GAVEKORT</h2>
          </div>
@@ -89,6 +110,7 @@
                 <h2>Giv dine gamle smykker et nyt liv</h2>
                 <h1>RE-DESIGN OG OMSMELTNING</h1>
                 <p>Alt er muligt, og det mest fantastiske er, at alle de skønne historier får lov at leve i de re-designede smykker.</p>
+                <!-- <div class="section-divider-hvid"></div> -->
                 <a href="#" class="omsmeltning-button">LÆS MERE</a>
             </div>
 </section>
@@ -108,10 +130,133 @@
     </div>
 </section>
 
+<section class="mere-end-bare-smykker-sektion">
+  <div class="diamonds">
+    <img src="/img - diamant1.png" alt="Diamond Icon" class="diamond" />
+    <img src="/img - diamant2.png" alt="Diamond Icon" class="diamond center-diamond" />
+    <img src="/img - diamant3.png" alt="Diamond Icon" class="diamond" />
+  </div>
+  <h2 class="section-title">MERE END BARE SMYKKER</h2>
+  <hr class="section-divider" />
+  <a href="#about-us" class="more-button">MERE OM OS</a>
+</section>
+
+<section class="gaveideer-sektion">
+<div class="desktop-only">
+    <h2>GAVE IDÉER</h2>
+
+    <div class="se-mere">
+        <div class="se-mere-container">SE MERE</div>
+        <button class="se-mere-button">
+            <span class="se-mere-button-container">&gt;</span>
+        </button>
+    </div>
 
 
+    <div class="flex-gaveideer-container">
+      <div class="gaveideer-box">
+        <img src="/img - gaveidéer1.png" alt="14 kt ring med citrin">
+        <p>Silk - 14 kt ring med citrin</p>
+        <p>6.995,00 DKK</p>
+      </div>
+      <div class="gaveideer-box">
+        <img src="/img - gaveidéer2.png" alt="Øreringe med diamant & koral">
+        <p>14 kt. Guld øreringe med diamant & koral</p>
+        <p>7.495,00 DKK</p>
+      </div>
+      <div class="gaveideer-box">
+        <img src="/img - gaveidéer3.png" alt="Infinity armbånd">
+        <p>Infinity - 14 kt Guld diamant armbånd</p>
+        <p>Fra 29.995,00 DKK</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-<footer></footer>
+<section class="shop-the-look-sektion">
+  <!-- Venstre sektion -->
+  <div class="venstre-sektion">
+      <div>
+          <img src="/img - ShopTheLook.png" alt="Model med smykker">
+          <div class="shop-the-look-overlay-tekst">SHOP THE LOOK</div>
+      </div>
+    </div>
+
+  <!-- Højre sektion -->
+  <div class="right-section">
+      <div class="product">
+          <img src="/img - ring1.png" alt="Diamantarmbånd">
+      </div>
+      <div class="product">
+          <img src="/img - ring2.png" alt="Diamantring">
+      </div>
+      <div class="product">
+          <img src="/img - ring3.png" alt="Alliance ring">
+      </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+    <div class="footer-icons">
+    <div class="social-icons">
+        <a href="#"><img src="facebook.png" alt="Facebook"></a>
+        <a href="#"><img src="insta.png" alt="Instagram"></a>
+        <a href="#"><img src="youtube.png" alt="YouTube"></a>
+        <a href="#"><img src="in.png" alt="LinkedIn"></a>
+        <a href="#"><img src="tiktok.png" alt="TikTok"></a>
+      </div>
+      </div>
+    <div class="footer-container">
+
+      <div class="footer-section">
+        <h4>MAIKEN PADE</h4>
+        <p>Kontakt os</p>
+        <p>Strandvejen 108</p>
+        <p>2900 Hellerup</p>
+        <p>Tlf. +45 28252723</p>
+        <p>maikenpadeguldsmed@gmail.com</p>
+        <p>CVR: 43234269</p>
+      </div>
+
+       <div class="footer-section">
+        <h4>KUNDESERVICE</h4>
+        <p>FAQ</p>
+        <p>Fragtomkostninger</p>
+        <p>Refunderingspolitik</p>
+        <p>Privatpolitik</p>
+        <p>Handelsbetingelser</p>
+      </div>
+
+      <div class="footer-section newsletter">
+        <h4>NYHEDSBREV</h4>
+        <input type="email" placeholder="E-MAIL" > 
+         <button>></button>
+      </div>
+
+      <div class="footer-section">
+        <h4>ÅBNINGSTIDER</h4>
+        <p>Periode: 26/11-13/12</p>
+        <p>Mandag - LUKKET</p>
+        <p>Tirsdag til Fredag - 10.00-17.30</p>
+        <p>Lørdag - 10.00-14.00</p>
+        <p>Søndag - LUKKET</p>
+      </div>
+  
+    
+    </div>
+  
+    <div class="footer-icons">
+      <div class="payment-icons">
+        <img src="visa.png" alt="Visa">
+        <img src="master.png" alt="Mastercard">
+        <img src="gpay.png" alt="Google Pay">
+        <img src="mobilepay.png" alt="MobilePay">
+      </div>
+    </div>
+  </footer>
+  
 </body>
 
 </html>
