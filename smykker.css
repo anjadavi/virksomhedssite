@@ -257,6 +257,7 @@ footer {
     color: black;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
   }
   
   h4 {
