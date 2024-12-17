@@ -294,4 +294,13 @@ body {
     font-size: 16px;
     font-weight: 500;
   }
+
+  .trustpilot img {
+    width: 75%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
 }
