@@ -340,6 +340,7 @@ body {
   padding: 40px 10px;
   background-color: var(--color3);
 }
+
 .gaveideer-sektion h2 {
   text-align: center;
   font-size: 36px;
@@ -409,4 +410,22 @@ body {
 
 .arrow-button:hover {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Standard styling */
+.gaveideer-sektion {
+  background-color: var(--color3); /* Original baggrundsfarve */
+  display: block;
+}
+
+/* Fjern baggrundsfarve og skjul på mobil */
+@media (max-width: 816px) {
+  .gaveideer-sektion {
+    display: none !important; /* Skjuler sektionen fuldstændig */
+    background-color: transparent !important; /* Overskriv baggrundsfarve */
+    visibility: hidden; /* Skjul visuelt, hvis display ikke er nok */
+    height: 0; /* Undgå pladsreservation */
+    margin: 0; /* Fjern marginer */
+    padding: 0; /* Fjern padding */
+  }
 }
