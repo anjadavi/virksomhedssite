@@ -84,7 +84,7 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: var(--color2);
+    color: var(--color4);
 }
 
 /* BURGERMENU */
@@ -195,7 +195,8 @@ nav a {
 }
 
 .redesign_guide_billeder {
-  max-width: 100%;
+  width: 100%;
+  object-fit: contain;
 }
 
 .redesign_guide_tekst_container {
@@ -429,6 +430,35 @@ text-transform: uppercase;
     object-fit: cover;
   }
 
+  .redesign_hero_tekst {
+    width: 1200px;
+    font-size: 250%;
+  }
 
+  .redesign_hero_tekst2 {
+    font-size: 100%;
+  }
+
+.redesign_sektion_1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.redesign_guide_container {
+  border: none;
+  grid-column: 1/2;
+  grid-row: 1/span 3;
+}
+
+.redesign_faq_container {
+  grid-column: 2/-1;
+  grid-row: 1/2;
+}
+
+.redesign_kontakt_container {
+  grid-column: 2/-1;
+  grid-row: 2/3;
+}
 
   }
