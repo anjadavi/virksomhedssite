@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
     <!-- FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,7 +15,7 @@
   <body>
     <header>
       <div>
-        <div class="header_info">
+        <div class="header_info_mobil">
           <div class="erfaring">
             <p><strong>20+ års</strong></p>
             <p>Erfaring</p>
@@ -29,13 +30,21 @@
           </div>
         </div>
 
+        <div class="header_info_desktop">
+          <span>Brug for hjælp?</span>
+          <span>+20 års erfaring | Fri fragt over 499,-</span>
+          <span class="flag">🇩🇰 Dansk Virksomhed</span>
+        </div>
+
         <div>
-          <input type="checkbox" id="burger-toggle" />
-          <label for="burger-toggle" class="burger-menu">&#9776;</label>
+          <div class="mobil_header">
+            <input type="checkbox" id="burger-toggle" />
+            <label for="burger-toggle" class="burger-menu">&#9776;</label>
+          </div>
 
           <nav>
             <ul class="nav_bar">
-              <li><a href="index.html">Forside</a></li>
+              <li class="forside_link"><a href="index.html">Forside</a></li>
               <li><a href="smykkesiden.html">Smykker</a></li>
               <li><a href="Egetdesign.html">Eget design</a></li>
               <li><a href="kærlighedsringe.html">Kærlighedsringe</a></li>
@@ -43,7 +52,7 @@
             </ul>
           </nav>
           <div class="logo_container">
-            <img class="header_logo" src="MP_online_logo.avif" alt="logo" />
+            <a href="index.html"><img class="header_logo" src="MP_online_logo.avif" /></a>
           </div>
         </div>
       </div>
@@ -53,7 +62,7 @@
       <div class="redesign_hero_container">
         <div class="redesign_hero_tekst"><strong>Re-design og omsmeltning</strong></div>
         <div class="redesign_hero_tekst2">Har du arvestykker eller smykker, der ikke længere passer til din stil? Ved at omsmelte og redesigne dem kan du skabe et unikt, nyt smykke, der stadig bærer de dyrebare minder og historier med sig.</div>
-        <img id="redesign_hero_img" src="omsmeltning_af_guld_7fa498cf-92f6-4243-8a1f-ad74e846d134.webp" alt="hero" />
+        <img class="redesign_hero_img" src="omsmeltning_af_guld_7fa498cf-92f6-4243-8a1f-ad74e846d134.webp" alt="hero" />
       </div>
 
       <div class="redesign_guide_container">
