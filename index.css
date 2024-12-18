@@ -1,0 +1,713 @@
+/* -------------------------STANDARD MOBIL VERSION----------------------- */
+
+body {
+  font-family: "Montserrat", serif;
+  --color1: #ffffff;
+  --color2: black;
+  --color3: #aa9f7d;
+  --color4: #4a3b29;
+  --color5: #303f3c;
+  margin: 0;
+  padding: 0;
+}
+/* HERO sektion - (mobil) */
+
+.hero {
+  width: 100%;
+  max-width: 100%;
+}
+
+.hero-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 56.25%; /* 16:9 format */
+}
+
+.hero-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures video covers the area without black bars */
+}
+
+/* OPDAG EFTER KATEGORI sektion - (mobil) */
+
+.h1_kategori {
+  text-align: center;
+  color: var(--color4);
+  font-size: 13px;
+  font-weight: 700;
+  margin: 0;
+  margin-top: 20px;
+}
+.flex-kategori-sektion {
+  display: flex;
+  justify-content: space-evenly;
+  gap: px;
+  flex-wrap: wrap;
+  margin: 0;
+}
+.flex-kategori-sektion h2 {
+  text-align: center;
+  width: 100%;
+  height: auto;
+  color: var(--color4);
+  font-size: 10px;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.flex-kategori-sektion img {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.kategori-sektion {
+  width: 20%;
+
+  text-align: center;
+}
+
+/* OMSMELTNING sektion - (mobil) */
+
+.omsmeltning-sektion {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.omsmeltning-sektion img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
+}
+.omsmeltning-tekst-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--color1);
+  text-align: center;
+  z-index: 2;
+  padding: 10px;
+  width: 90%;
+}
+.omsmeltning-tekst-overlay h2 {
+  font-size: 9px;
+  font-weight: 700;
+  margin: 10px 0 5px;
+  color: var(--color1);
+}
+.omsmeltning-tekst-overlay h1 {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 5px 0 5px;
+}
+.omsmeltning-tekst-overlay p {
+  font-size: 9px;
+  font-weight: 300;
+  margin: 0px 70px 5px;
+}
+.omsmeltning-button {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 3px 5px;
+  font-size: 10px;
+  font-weight: 500;
+  color: var(--color4);
+  cursor: pointer;
+  z-index: 2;
+  text-decoration: none;
+}
+
+/* REPERATIONER sektion - (mobil) */
+
+.reperationer-sektion {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.reperationer-sektion img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
+}
+.reperationer-tekst-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2;
+  padding: 10px;
+  width: 90%;
+}
+.reperationer-tekst-overlay h1 {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 5px 0 5px;
+  color: var(--color1);
+}
+.reperationer-tekst-overlay p {
+  font-size: 9px;
+  font-weight: 300;
+  margin: 0px 70px 5px;
+  padding-bottom: 5px;
+  color: var(--color1);
+}
+.reperationer-button {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 3px 5px;
+  font-size: 10px;
+  font-weight: 500;
+  color: var(--color4);
+  cursor: pointer;
+  z-index: 2;
+  text-decoration: none;
+}
+
+/* Trustpilot sektion (mobil) */
+
+.trustpilot {
+  margin-bottom: 5px;
+  background-color: #f7f7f7;
+}
+.trustpilot img {
+  width: 80%;
+  height: 100%;
+  display: block; /* Sørg for, at billedet bliver en blok */
+  margin: 0 auto; /* Centrerer billedet horisontalt */
+}
+
+/* MERE END BARE SMYKKER sektion - (mobil) */
+.mere-end-bare-smykker-sektion {
+  text-align: center;
+  background-color: #aa9f7d3b;
+  padding: 0.5rem 1rem;
+  margin-bottom: 5px;
+}
+.diamonds {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+.diamond {
+  width: 50px;
+  height: auto;
+}
+.center-diamond {
+  transform: scale(1.2);
+}
+.section-title {
+  font-size: 18px;
+  color: var(--color4);
+  font-weight: bold;
+  margin: 0.5rem 1rem;
+}
+.section-divider {
+  width: 200px;
+  height: 1px;
+  background-color: var(--color4);
+  border: none;
+}
+.more-button {
+  display: inline-block;
+  background-color: #efe9e0;
+  color: var(--color4);
+  text-decoration: none;
+  padding: 5px 8px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.more-button:hover {
+  background-color: var(--color1);
+}
+
+/* GAVEIDEER sektion - (mobil + desktop) */
+.gaveideer-sektion {
+  display: block;
+}
+.desktop-only {
+  display: block;
+}
+@media (max-width: 816px) {
+  .desktop-only {
+    display: none !important;
+  }
+  .gaveideer-sektion {
+    display: none !important; /* Skjuler sektionen fuldstændig */
+    background-color: transparent !important; /* Overskriv baggrundsfarve */
+    visibility: hidden; /* Skjul visuelt, hvis display ikke er nok */
+    height: 0; /* Undgå pladsreservation */
+    margin: 0; /* Fjern marginer */
+    padding: 0; /* Fjern padding */
+  }
+}
+.gaveideer-sektion {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 40px 10px;
+  background-color: var(--color3);
+}
+.gaveideer-sektion h2 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  margin: 20px 0;
+  color: var(--color1);
+}
+.flex-gaveideer-container {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  padding: 25px 10px;
+}
+.gaveideer-box {
+  background-color: var(--color1);
+  text-align: center;
+  padding: 30px;
+  width: 250px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.gaveideer-box img {
+  max-width: 100%;
+  cursor: pointer;
+}
+.gaveideer-box p {
+  margin: 10px 0;
+  font-size: 10px;
+  color: var(--color4);
+}
+.se-mere-container {
+  text-align: right;
+  padding-right: 10px;
+  padding-top: 18px;
+}
+.se-mere {
+  display: flex;
+  justify-content: right;
+  color: var(--color1);
+  font-size: 14px;
+  font-weight: 400px;
+  cursor: pointer;
+}
+.se-mere-button {
+  background-color: #d4c8a5; /* Den beige baggrundsfarve */
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding-bottom: 2.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Let skyggeeffekt */
+}
+.se-mere-button-container {
+  color: var(--color1);
+  font-size: 20px; /* Størrelse på pilen */
+  font-weight: bold;
+  padding-bottom: 2.5px;
+  justify-content: end;
+}
+.arrow-button:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* SHOP THE LOOK sektion - (mobil) */
+.shop-the-look-sektion {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color1);
+}
+.venstre-sektion {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.venstre-sektion img {
+  max-height: 400px;
+  justify-content: center;
+}
+.shop-the-look-overlay-tekst {
+  position: absolute;
+  color: var(--color1);
+  font-size: 28px;
+  font-weight: bold;
+  bottom: 50%;
+  left: 100px;
+  text-align: center;
+}
+.right-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* mellemrum mellem produkter */
+  margin-top: 20px;
+}
+.product {
+  text-align: center;
+  background-color: var(--color1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.product img {
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+.product:hover {
+  transform: translateY(-5px);
+}
+
+/* FOOTER - (mobil) */
+footer {
+  background-color: #aa9f7d4f;
+  padding: 20px;
+  color: black;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h4 {
+  margin-bottom: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+input,
+button {
+  margin: 5px 0;
+  font-size: 12px;
+  background-color: transparent;
+  cursor: pointer;
+}
+footer p {
+  font-weight: lighter;
+  font-size: 10px;
+  cursor: pointer;
+}
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer-section input {
+  padding: 8px;
+  border: 1px solid #4a3b29;
+  width: 70%;
+}
+.footer-section button {
+  padding: 8px;
+  background-color: transparent;
+  border: 1px solid #4a3b29;
+  cursor: pointer;
+}
+/* Social og betalingsikoner */
+.footer-icons {
+  margin-top: 20px;
+  cursor: pointer;
+}
+.social-icons img,
+.payment-icons img {
+  width: 40px;
+  margin: 5px;
+  cursor: pointer;
+}
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.footer-container h4 {
+  font-size: 12px;
+}
+
+/* ------------------------------ DESKTOP VERSION----------------------- */
+
+@media (min-width: 816px) {
+  body {
+    font-family: "Montserrat", serif;
+    --color1: #ffffff;
+    --color2: black;
+    --color3: #aa9f7d;
+    --color4: #4a3b29;
+    --color5: #303f3c;
+  }
+  main {
+    margin-top: 105px;
+  }
+  /* .section-divider {
+    width: 200px;
+    height: 1px;
+    background-color: #4a3b29;
+    margin: 10px auto;
+  }
+  .section-divider-hvid {
+    width: 200px;
+    height: 1px;
+    background-color: #ffffff;
+    margin: 10px auto;
+  } */
+
+  /* HERO sektion - (desktop) */
+
+  .hero-container {
+    padding-bottom: 42.25%;
+  }
+  .hero-button {
+    font-size: 22px;
+  }
+
+  /* OPDAG EFTER KATEGORI sektion - (desktop) */
+
+  .h1_kategori {
+    text-align: center;
+    color: var(--color4);
+    font-size: 26px;
+    font-weight: 700;
+    margin: 0;
+    margin-top: 40px;
+  }
+
+  .kategori-sektion h2 {
+    text-align: center;
+    width: 100%;
+    height: auto;
+    color: var(--color4);
+    font-size: 20px;
+    font-weight: 550;
+    margin: 0;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  .kategori-sektion img {
+    width: 80%;
+    height: auto;
+    margin: 0;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+
+  /* OMSMELTNING sektion  - (desktop) */
+
+  .omsmeltning-sektion img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    object-position: center left;
+  }
+  .omsmeltning-tekst-overlay {
+    top: 50%;
+    width: 50%;
+  }
+  .omsmeltning-tekst-overlay h2 {
+    font-size: 16px;
+    font-weight: 700;
+    padding: 3px;
+    color: var(--color1);
+  }
+  .omsmeltning-tekst-overlay h1 {
+    font-size: 40px;
+    font-weight: 700;
+    padding: 3px;
+    color: var(--color1);
+  }
+  .omsmeltning-tekst-overlay p {
+    font-size: 16px;
+    font-weight: 300;
+    padding: 3px;
+    padding-bottom: 20px;
+    color: var(--color1);
+  }
+
+  .omsmeltning-button {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--color4);
+  }
+
+  /* REPERATIONER sektion - (desktop) */
+
+  .reperationer-sektion img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    object-position: center left;
+  }
+
+  .reperationer-tekst-overlay {
+    top: 50%;
+    width: 50%;
+    padding: 20px;
+  }
+  .reperationer-tekst-overlay h1 {
+    font-size: 40px;
+    font-weight: 700;
+    padding: 3px;
+    color: var(--color1);
+  }
+  .reperationer-tekst-overlay p {
+    font-size: 16px;
+    font-weight: 300;
+    padding: 3px;
+    padding-bottom: 20px;
+    color: var(--color1);
+  }
+
+  .reperationer-button {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--color4);
+  }
+
+  /* TRUSTPILOT sektion - (desktop) */
+  .trustpilot {
+    background-color: #f7f7f7;
+  }
+
+  .trustpilot img {
+    width: 75%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* MERE END BARE SMYKKER sektion - (desktop) */
+  .mere-end-bare-smykker-sektion {
+    padding: 1.5rem 0.5rem;
+  }
+  .diamond {
+    width: 40px;
+  }
+  .center-diamond {
+    transform: scale(1.1);
+  }
+  .section-title {
+    font-size: 1.5rem;
+  }
+  .more-button {
+    font-size: 0.9rem;
+    padding: 0.4rem 1.2rem;
+  }
+
+  /* SHOP THE LOOK sektion - (desktop) */
+  .shop-the-look-sektion {
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 0;
+    padding-top: 5px;
+    padding-left: 5px;
+  }
+  .venstre-sektion {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .venstre-sektion img {
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    margin: 0;
+    padding: 0;
+  }
+  .shop-the-look-overlay-tekst {
+    position: absolute;
+    font-size: 38px;
+    bottom: 50%;
+    left: 55px;
+  }
+  .right-section {
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+  }
+  .product img {
+    max-width: 150px;
+    height: auto;
+  }
+
+  /* FOOTER sektion - (desktop) */
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .footer-section {
+    flex: 1;
+  }
+
+  .footer-section input {
+    width: auto;
+  }
+  .footer-container p {
+    font-size: 14px;
+  }
+  .footer-container h4 {
+    font-size: 17px;
+  }
+  .shop-the-look-sektion {
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 0;
+    padding-top: 5px;
+    padding-left: 5px;
+  }
+  .venstre-sektion {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .venstre-sektion img {
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    margin: 0;
+    padding: 0;
+  }
+  .shop-the-look-overlay-tekst {
+    position: absolute;
+    font-size: 38px;
+    bottom: 50%;
+    left: 55px;
+  }
+  .right-section {
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+  }
+  .product img {
+    max-width: 150px;
+    height: auto;
+  }
+}
