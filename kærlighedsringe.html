@@ -7,7 +7,51 @@
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-    <header></header>
+    <header>
+        <div>
+          <div class="header_info_mobil">
+            <div class="erfaring">
+              <p><strong>20+ års</strong></p>
+              <p>Erfaring</p>
+            </div>
+            <div class="fragt">
+              <p><strong>Gratis fragt</strong></p>
+              <p>Fri fragt over 499,-</p>
+            </div>
+            <div class="vrksted">
+              <p><strong>Værksted</strong></p>
+              <p>Hellerup</p>
+            </div>
+          </div>
+  
+          <div class="header_info_desktop">
+            <span>Brug for hjælp?</span>
+            <span>+20 års erfaring | Fri fragt over 499,-</span>
+            <span class="flag">🇩🇰 Dansk Virksomhed</span>
+          </div>
+  
+          <div>
+            <div class="mobil_header">
+              <input type="checkbox" id="burger-toggle" />
+              <label for="burger-toggle" class="burger-menu">&#9776;</label>
+            </div>
+  
+            <nav>
+              <ul class="nav_bar">
+                <li class="forside_link"><a href="index.html">Forside</a></li>
+                <li><a href="smykkesiden.html">Smykker</a></li>
+                <li><a href="Egetdesign.html">Eget design</a></li>
+                <li><a href="kærlighedsringe.html">Kærlighedsringe</a></li>
+                <li><a href="omos.html">Værkstedet</a></li>
+              </ul>
+            </nav>
+            <div class="logo_container">
+              <a href="index.html"><img class="header_logo" src="billeder/MP_online_logo.avif" /></a>
+            </div>
+          </div>
+        </div>
+      </header>
+
     <main>
         <section class="hero">
             <img src="billeder/ringeimg.webp" alt="">
@@ -16,13 +60,15 @@
         <section class="beskrivelse">
             <h2>VORES FÆLLESBETEGNELSE</h2>
             <img src="billeder/Line.webp" alt="Linje">
-            <p>
+            <div class="text">
+              <p>
                 Forlovelsesringe og vielsesringe er et tegn på samhørighed, på kærligheden mellem to mennesker, og derfor har vi altid kaldt det kærlighedsringe. For uanset om I skal giftes i kirke, holde fest for 100 mennesker eller bare være jer to på en strand i Bahamas, så er vigtigst af alt kærligheden.
-            </p>
-            <p>
+              </p>
+              <p>
                 Hos os er der ingen regler, vi skaber ringene ud fra jeres ønsker, med detaljer fra hjertet eller en sød besked graveret indvendigt i ringene, som kun du og din udkårne kender til. 
-            </p>
-            <p>Foren jeres kærlighed til hinanden med en unik og håndsmedet ring fra Guldsmed Maiken Pade. </p>
+              </p>
+              <p>Foren jeres kærlighed til hinanden med en unik og håndsmedet ring fra Guldsmed Maiken Pade. </p>
+          </div>
         </section>
     <div class="ringcontainer">
         <section class="ringe">
@@ -96,7 +142,57 @@
         </section>
         <script src="javascript.js"></script>
     </main>
+    
     <footer>
-    </footer>
+        <div class="footer-icons">
+        <div class="social-icons">
+            <a href="#"><img src="billeder/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="billeder/insta.png" alt="Instagram"></a>
+            <a href="#"><img src="billeder/youtube.png" alt="YouTube"></a>
+            <a href="#"><img src="billeder/in.png" alt="LinkedIn"></a>
+            <a href="#"><img src="billeder/tiktok.png" alt="TikTok"></a>
+          </div>
+          </div>
+        <div class="footer-container">
+          <div class="footer-section">
+            <h4>MAIKEN PADE</h4>
+            <p>Kontakt os</p>
+            <p>Strandvejen 108</p>
+            <p>2900 Hellerup</p>
+            <p>Tlf. +45 28252723</p>
+            <p>maikenpadeguldsmed@gmail.com</p>
+            <p>CVR: 43234269</p>
+          </div>
+           <div class="footer-section">
+            <h4>KUNDESERVICE</h4>
+            <p>FAQ</p>
+            <p>Fragtomkostninger</p>
+            <p>Refunderingspolitik</p>
+            <p>Privatpolitik</p>
+            <p>Handelsbetingelser</p>
+          </div>
+          <div class="footer-section newsletter">
+            <h4>NYHEDSBREV</h4>
+            <input type="email" placeholder="E-MAIL" > 
+             <button>></button>
+          </div>
+          <div class="footer-section">
+            <h4>ÅBNINGSTIDER</h4>
+            <p>Periode: 26/11-13/12</p>
+            <p>Mandag - LUKKET</p>
+            <p>Tirsdag til Fredag - 10.00-17.30</p>
+            <p>Lørdag - 10.00-14.00</p>
+            <p>Søndag - LUKKET</p>
+          </div>
+        </div>
+        <div class="footer-icons">
+          <div class="payment-icons">
+            <img src="billeder/visa.png" alt="Visa">
+            <img src="billeder/master.png" alt="Mastercard">
+            <img src="billeder/gpay.png" alt="Google Pay">
+            <img src="billeder/mobilepay.png" alt="MobilePay">
+          </div>
+        </div>
+      </footer>
 </body>
 </html>
